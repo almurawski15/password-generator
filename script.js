@@ -35,4 +35,9 @@ function generatePassword() {
 	  alert("Please choose a number between 8 - 128!");
 	  return generatePassword()
 	}	
-
+	
+//Asks the user if they want to include the following variables upperLetters, lowerLetters, numbers, and special character?
+let wantLowercase = confirm("Would you like to include lowercase letters?");
+let wantUppercase = confirm("Would you like to include uppercase letters?");
+let wantNumbers = confirm("Would you like to include numbers?");
+let wantSpecial = confirm("Would you like to include special characters?");

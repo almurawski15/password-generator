@@ -35,9 +35,36 @@ function generatePassword() {
 	  alert("Please choose a number between 8 - 128!");
 	  return generatePassword()
 	}	
-	
+
 //Asks the user if they want to include the following variables upperLetters, lowerLetters, numbers, and special character?
 let wantLowercase = confirm("Would you like to include lowercase letters?");
 let wantUppercase = confirm("Would you like to include uppercase letters?");
 let wantNumbers = confirm("Would you like to include numbers?");
 let wantSpecial = confirm("Would you like to include special characters?");
+
+if(!wantLowercase&&!wantUppercase&&!wantNumbers&&!wantSpecial){
+	alert("You must choose at least 1 character type!");
+	return generatePassword()
+  }
+
+  if(wantUppercase){
+	userchoice += upperLetters
+  }
+  if(wantLowercase){
+	userchoice += lowerLetters
+  }
+
+  if(wantNumbers) {
+	userchoice += numbers
+  }
+
+  if(wantSpecial) {
+	userchoice += specialChars
+  }
+
+for (var i = 0; i < length; i++) {
+  result += userchoice.charAt(Math.floor(Math.random() * userchoice.length));
+}
+return result;
+
+}

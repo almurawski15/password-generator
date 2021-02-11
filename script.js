@@ -6,7 +6,7 @@ let lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 let upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let numbers = "0123456789";
 let specialChars = "!@,#$%&*{}[]/\\+=";
-let userchoice = "";
+let userChoice = "";
 
 // Write password to the #password input
 function writePassword() {
@@ -23,10 +23,11 @@ generateBtn.addEventListener("click", writePassword);
 // Logic to randomly generate password based on parameters chosen
 function generatePassword() {
 
-	//Initiating random generation to produce password in the end result 
-	let result = "";
-	//Asks the user how many characters to include in their password 
-	let length = prompt("How many characters would you like to include in your password? (must be between 8 and 128)");
+//Initiating random generation to produce password in the end result 
+let result = "";
+
+//Asks the user how many characters to include in their password 
+let length = prompt("How many characters would you like to include in your password? (must be between 8 and 128)");
 	if(isNaN(length)){
 	  alert("You must input a number!");
 	  return generatePassword()
@@ -48,22 +49,23 @@ if(!wantLowercase&&!wantUppercase&&!wantNumbers&&!wantSpecial){
   }
 
   if(wantUppercase){
-	userchoice += upperLetters
+	userChoice += upperLetters
   }
+  
   if(wantLowercase){
-	userchoice += lowerLetters
+	userChoice += lowerLetters
   }
 
   if(wantNumbers) {
-	userchoice += numbers
+	userChoice += numbers
   }
 
   if(wantSpecial) {
-	userchoice += specialChars
+	userChoice += specialChars
   }
 
 for (var i = 0; i < length; i++) {
-  result += userchoice.charAt(Math.floor(Math.random() * userchoice.length));
+  result += userChoice.charAt(Math.floor(Math.random() * userChoice.length));
 }
 return result;
 

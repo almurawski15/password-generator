@@ -29,3 +29,7 @@ The following images shows the web application's appearance and functionality:
 
 ## Deployed Project Location: 
 * Page published at: https://almurawski15.github.io/password-generator/
+
+## Creator Comments
+
+I found this particular assignment challenging. Learning to write clean code and remember to commit to github during the process rather than near the end will be a learning for me. I tried correcting my mistakes and sought to condense/simplify the code, rather than overthinking it. 

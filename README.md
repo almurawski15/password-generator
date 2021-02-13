@@ -20,7 +20,7 @@ When prompted the password should meet the following criteria:
 
 The following images shows the web application's appearance and functionality:
 
-![password-generator](.assets/portfolio_snip_1.PNG)
+![password-generator](assets/portfolio_snip_1.PNG)
 
 ![password-generator](.assets/portfolio_snip_2.PNG)
 
